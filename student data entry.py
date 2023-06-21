@@ -1,7 +1,7 @@
 import pickle as pick
 i=input('enter file address')
 def read():
-  f=open('i','r')
+  f=open('i','rb')
   try:
     while True:
       r=pick.load(f)
@@ -10,7 +10,7 @@ def read():
      f.close()
       
 def write():
-  f=open('i','a')
+  f=open('i','wb+')
   data={}
   stud=[]
   i=int(input('enter number of records'))
