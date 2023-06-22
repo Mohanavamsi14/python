@@ -5,8 +5,8 @@ def read():
   try:
     while True:
       r=pick.load(f)
-      print(r,'/n')
    except:
+    print(r)
      f.close()
       
 def write():
@@ -19,5 +19,5 @@ def write():
       data['roll']=int(input('roll number:'))
       data['marks]=int(input('marks'))
       stud.append(data)
-      pick.dump(f,stud)
+      pick.dump(stud,f)
       
